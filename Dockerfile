@@ -1,4 +1,4 @@
-FROM mhart/alpine-node:13.8.0
+FROM mhart/alpine-node:13.8.0@sha256:9cd8663d7ae46ef979b92b07b049b26d18603ae0b2a5d5774a97b497874cdd6d
 
 RUN apk update && apk add --no-cache --virtual build-dependencies git python g++ make
 RUN wget https://github.com/ethereum/solidity/releases/download/v0.8.10/solc-static-linux -O /bin/solc && chmod +x /bin/solc
